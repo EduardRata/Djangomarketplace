@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+{% for user in users %}
+    <p>name:{{ user.name}} email: {{user.email}}</p>
+{% empty %}
+    <p>No users found.</p>
+{% endfor %}
+{% endblock %}
